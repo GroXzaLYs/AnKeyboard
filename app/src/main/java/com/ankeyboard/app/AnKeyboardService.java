@@ -26,6 +26,22 @@ import android.content.res.Configuration;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.Configuration;
+import android.inputmethodservice.InputMethodService;
+import android.inputmethodservice.Keyboard;
+import android.inputmethodservice.KeyboardView;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.inputmethod.InputConnection;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.TypedValue;
+import java.util.List;
 
 public class AnKeyboardService extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
 
