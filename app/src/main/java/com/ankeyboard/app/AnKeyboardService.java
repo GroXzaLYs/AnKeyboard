@@ -1,5 +1,9 @@
 package com.ankeyboard.app;
 
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
