@@ -1,33 +1,75 @@
 <resources>
-	<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
-		<item name="colorOnPrimary">@android:color/white</item>
+	<!-- Material Design 3 Light Theme -->
+	<style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
 		<item name="colorPrimary">@color/colorPrimary</item>
-		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-		<item name="colorAccent">@color/colorAccent</item>
-		<item name="colorControlHighlight">@color/colorControlHighlight</item>
-		<item name="colorControlNormal">@color/colorControlNormal</item>
+		<item name="colorOnPrimary">@color/colorOnPrimary</item>
+		<item name="colorPrimaryContainer">@color/colorPrimaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/colorOnPrimaryContainer</item>
+		<item name="colorSecondary">@color/colorSecondary</item>
+		<item name="colorOnSecondary">@color/colorOnSecondary</item>
+		<item name="colorSecondaryContainer">@color/colorSecondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/colorOnSecondaryContainer</item>
+		<item name="colorTertiary">@color/colorTertiary</item>
+		<item name="colorOnTertiary">@color/colorOnTertiary</item>
+		<item name="colorTertiaryContainer">@color/colorTertiaryContainer</item>
+		<item name="colorOnTertiaryContainer">@color/colorOnTertiaryContainer</item>
+		<item name="colorError">@color/colorError</item>
+		<item name="colorErrorContainer">@color/colorErrorContainer</item>
+		<item name="colorOnError">@color/colorOnError</item>
+		<item name="colorOnErrorContainer">@color/colorOnErrorContainer</item>
+		<item name="android:colorBackground">@color/colorBackground</item>
+		<item name="colorOnBackground">@color/colorOnBackground</item>
+		<item name="colorSurface">@color/colorSurface</item>
+		<item name="colorOnSurface">@color/colorOnSurface</item>
+		<item name="colorSurfaceVariant">@color/colorSurfaceVariant</item>
+		<item name="colorOnSurfaceVariant">@color/colorOnSurfaceVariant</item>
+		<item name="colorOutline">@color/colorOutline</item>
+		<item name="colorOutlineVariant">@color/colorOutlineVariant</item>
+		<item name="android:windowLightStatusBar">true</item>
 	</style>
-	<style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar.Bridge">
-		<item name="colorOnPrimary">@android:color/black</item>
-		<item name="colorPrimary">#BB86FC</item>
-		<item name="colorPrimaryDark">#3700B3</item>
-		<item name="colorAccent">#03DAC6</item>
-		<item name="colorControlHighlight">#BB86FC</item>
-		<item name="colorControlNormal">#888888</item>
-		<item name="android:colorBackground">#121212</item>
-		<item name="colorSurface">#1E1E1E</item>
-		<item name="colorOnSurface">#FFFFFF</item>
+
+	<!-- Material Design 3 Dark Theme -->
+	<style name="AppTheme.Dark" parent="Theme.Material3.Dark.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorOnPrimary">@color/colorOnPrimary</item>
+		<item name="colorPrimaryContainer">@color/colorPrimaryContainer</item>
+		<item name="colorOnPrimaryContainer">@color/colorOnPrimaryContainer</item>
+		<item name="colorSecondary">@color/colorSecondary</item>
+		<item name="colorOnSecondary">@color/colorOnSecondary</item>
+		<item name="colorSecondaryContainer">@color/colorSecondaryContainer</item>
+		<item name="colorOnSecondaryContainer">@color/colorOnSecondaryContainer</item>
+		<item name="android:colorBackground">@color/keyboardBackgroundDark</item>
+		<item name="colorSurface">@color/keyBackgroundDark</item>
+		<item name="colorOnSurface">@color/keyTextColorDark</item>
 	</style>
+
+	<!-- Full Screen Variant -->
 	<style name="AppTheme.FullScreen" parent="AppTheme">
 		<item name="android:windowFullscreen">true</item>
 		<item name="android:windowContentOverlay">@null</item>
 	</style>
-	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
-	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+	<!-- Action Bar Overlays -->
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+
+	<!-- Debug Activity Theme -->
 	<style name="AppTheme.DebugActivity" parent="AppTheme">
-		<item name="actionBarStyle">@style/ThemeOverlay.MaterialComponents.ActionBar.Primary</item>
-		<item name="actionBarTheme">@style/Widget.MaterialComponents.ActionBar.Primary</item>
 		<item name="windowActionBar">true</item>
 		<item name="windowNoTitle">false</item>
+	</style>
+
+	<!-- Typography Styles -->
+	<style name="TextAppearance.Large" parent="TextAppearance.Material3.DisplayLarge">
+		<item name="android:textColor">@color/colorOnBackground</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Medium" parent="TextAppearance.Material3.BodyLarge">
+		<item name="android:textColor">@color/colorOnBackground</item>
+	</style>
+
+	<style name="TextAppearance.Small" parent="TextAppearance.Material3.BodySmall">
+		<item name="android:textColor">@color/colorOnBackground</item>
 	</style>
 </resources>

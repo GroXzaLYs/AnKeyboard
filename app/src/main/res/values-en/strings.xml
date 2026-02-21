@@ -1,0 +1,59 @@
+<resources>
+	<string name="app_name" translatable="false">AnKeyboard</string>
+	
+	<!-- Main Setup Screen -->
+	<string name="app_description">Smart keyboard with autocorrect, emoji, translate, and multi-language support</string>
+	<string name="setup_title">AnKeyboard Setup</string>
+	<string name="enable_keyboard">Enable AnKeyboard</string>
+	<string name="select_keyboard">Select AnKeyboard</string>
+	<string name="enable_desc">Open settings to enable the keyboard</string>
+	<string name="select_desc">Select AnKeyboard as your default keyboard</string>
+	<string name="test_hint">Test the new keyboard features...</string>
+	<string name="try_typing">Try typing here:</string>
+	
+	<!-- Settings -->
+	<string name="settings_title">Settings</string>
+	<string name="language_setting">Language</string>
+	<string name="theme_setting">Theme</string>
+	<string name="sound_setting">Sound</string>
+	<string name="vibration_setting">Vibration</string>
+	<string name="dark_mode">Dark Mode</string>
+	<string name="light_mode">Light Mode</string>
+	<string name="auto_mode">Auto</string>
+	<string name="enable_translate">Enable Translation</string>
+	<string name="translate_language">Translation Language</string>
+	
+	<!-- Translate Feature -->
+	<string name="translate">Translate</string>
+	<string name="translated_text">Translated Text</string>
+	<string name="from_language">From Language</string>
+	<string name="to_language">To Language</string>
+	<string name="translating">Translating...</string>
+	<string name="translation_error">Translation failed</string>
+	
+	<!-- Keyboard Actions -->
+	<string name="delete">Delete</string>
+	<string name="space">Space</string>
+	<string name="enter">Enter</string>
+	<string name="shift">Shift</string>
+	<string name="emoji">Emoji</string>
+	<string name="select_all">Select All</string>
+	<string name="copy">Copy</string>
+	<string name="cut">Cut</string>
+	<string name="paste">Paste</string>
+	<string name="undo">Undo</string>
+	<string name="redo">Redo</string>
+	
+	<!-- Suggestions -->
+	<string name="suggestions">Suggestions</string>
+	<string name="no_suggestions">No suggestions</string>
+	
+	<!-- Messages -->
+	<string name="success">Success</string>
+	<string name="error">Error</string>
+	<string name="copy_success">Text copied</string>
+	<string name="cut_success">Text cut</string>
+	<string name="paste_success">Text pasted</string>
+	<string name="keyboard_not_enabled">Keyboard is not enabled</string>
+	<string name="select_keyboard_picker">Select a keyboard from the list</string>
+</resources>

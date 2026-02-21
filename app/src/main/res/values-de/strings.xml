@@ -1,0 +1,59 @@
+<resources>
+	<string name="app_name" translatable="false">AnKeyboard</string>
+	
+	<!-- Main Setup Screen -->
+	<string name="app_description">Intelligente Tastatur mit Autokorrektur, Emoji, Übersetzung und Mehrsprachunterstützung</string>
+	<string name="setup_title">AnKeyboard-Einstellung</string>
+	<string name="enable_keyboard">AnKeyboard aktivieren</string>
+	<string name="select_keyboard">AnKeyboard auswählen</string>
+	<string name="enable_desc">Öffnen Sie die Einstellungen, um die Tastatur zu aktivieren</string>
+	<string name="select_desc">Wählen Sie AnKeyboard als Ihre Standardtastatur</string>
+	<string name="test_hint">Testen Sie die neuen Tastaturfunktionen...</string>
+	<string name="try_typing">Versuchen Sie hier einzutippen:</string>
+	
+	<!-- Settings -->
+	<string name="settings_title">Einstellungen</string>
+	<string name="language_setting">Sprache</string>
+	<string name="theme_setting">Design</string>
+	<string name="sound_setting">Ton</string>
+	<string name="vibration_setting">Vibration</string>
+	<string name="dark_mode">Dunkler Modus</string>
+	<string name="light_mode">Heller Modus</string>
+	<string name="auto_mode">Automatisch</string>
+	<string name="enable_translate">Übersetzung aktivieren</string>
+	<string name="translate_language">Übersetzungssprache</string>
+	
+	<!-- Translate Feature -->
+	<string name="translate">Übersetzen</string>
+	<string name="translated_text">Übersetzter Text</string>
+	<string name="from_language">Von Sprache</string>
+	<string name="to_language">Zur Sprache</string>
+	<string name="translating">Wird übersetzt...</string>
+	<string name="translation_error">Übersetzung fehlgeschlagen</string>
+	
+	<!-- Keyboard Actions -->
+	<string name="delete">Löschen</string>
+	<string name="space">Leerzeichen</string>
+	<string name="enter">Eingabe</string>
+	<string name="shift">Umschalt</string>
+	<string name="emoji">Emoji</string>
+	<string name="select_all">Alles auswählen</string>
+	<string name="copy">Kopieren</string>
+	<string name="cut">Ausschneiden</string>
+	<string name="paste">Einfügen</string>
+	<string name="undo">Rückgängig machen</string>
+	<string name="redo">Wiederherstellen</string>
+	
+	<!-- Suggestions -->
+	<string name="suggestions">Vorschläge</string>
+	<string name="no_suggestions">Keine Vorschläge</string>
+	
+	<!-- Messages -->
+	<string name="success">Erfolg</string>
+	<string name="error">Fehler</string>
+	<string name="copy_success">Text kopiert</string>
+	<string name="cut_success">Text ausgeschnitten</string>
+	<string name="paste_success">Text eingefügt</string>
+	<string name="keyboard_not_enabled">Tastatur ist nicht aktiviert</string>
+	<string name="select_keyboard_picker">Wählen Sie eine Tastatur aus der Liste</string>
+</resources>

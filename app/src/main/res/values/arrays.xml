@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Language Names for UI -->
+    <string-array name="language_names">
+        <item>Bahasa Indonesia</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>中文</item>
+        <item>日本語</item>
+    </string-array>
+
+    <!-- Language Codes -->
+    <string-array name="language_codes">
+        <item>id</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>zh-CN</item>
+        <item>ja</item>
+    </string-array>
+
+    <!-- Theme Names -->
+    <string-array name="theme_names">
+        <item>Terang</item>
+        <item>Gelap</item>
+        <item>Otomatis</item>
+    </string-array>
+
+    <!-- Theme Values -->
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+        <item>auto</item>
+    </string-array>
+</resources>

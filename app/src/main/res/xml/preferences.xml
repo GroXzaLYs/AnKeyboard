@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Language Group -->
+    <PreferenceCategory
+        android:title="@string/language_setting"
+        android:key="language_category">
+        
+        <ListPreference
+            android:key="ui_language"
+            android:title="@string/language_setting"
+            android:summary="Pilih bahasa aplikasi"
+            android:defaultValue="id"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_codes" />
+            
+    </PreferenceCategory>
+
+    <!-- Display Group -->
+    <PreferenceCategory
+        android:title="@string/theme_setting"
+        android:key="display_category">
+        
+        <ListPreference
+            android:key="theme"
+            android:title="@string/theme_setting"
+            android:summary="Pilih tema tampilan"
+            android:defaultValue="auto"
+            android:entries="@array/theme_names"
+            android:entryValues="@array/theme_values" />
+            
+    </PreferenceCategory>
+
+    <!-- Keyboard Group -->
+    <PreferenceCategory
+        android:title="Keyboard"
+        android:key="keyboard_category">
+        
+        <SwitchPreferenceCompat
+            android:key="sound_enabled"
+            android:title="@string/sound_setting"
+            android:summary="Nyalakan suara keyboard"
+            android:defaultValue="true" />
+            
+        <SwitchPreferenceCompat
+            android:key="vibration_enabled"
+            android:title="@string/vibration_setting"
+            android:summary="Nyalakan getar keyboard"
+            android:defaultValue="true" />
+            
+    </PreferenceCategory>
+
+    <!-- Translation Group -->
+    <PreferenceCategory
+        android:title="Translation"
+        android:key="translation_category">
+        
+        <SwitchPreferenceCompat
+            android:key="translate_enabled"
+            android:title="@string/enable_translate"
+            android:summary="Aktifkan fitur terjemahan"
+            android:defaultValue="false" />
+            
+        <ListPreference
+            android:key="translate_language"
+            android:title="@string/translate_language"
+            android:summary="Pilih bahasa terjemahan"
+            android:defaultValue="en"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_codes"
+            android:dependency="translate_enabled" />
+            
+    </PreferenceCategory>
+
+    <!-- Advanced Group -->
+    <PreferenceCategory
+        android:title="Advanced"
+        android:key="advanced_category">
+        
+        <SwitchPreferenceCompat
+            android:key="learning_enabled"
+            android:title="Word Learning"
+            android:summary="Belajar dari kata-kata yang Anda ketik"
+            android:defaultValue="true" />
+            
+        <SwitchPreferenceCompat
+            android:key="autocorrect_enabled"
+            android:title="Autocorrect"
+            android:summary="Aktifkan perbaikan otomatis"
+            android:defaultValue="true" />
+            
+    </PreferenceCategory>
+
+</PreferenceScreen>

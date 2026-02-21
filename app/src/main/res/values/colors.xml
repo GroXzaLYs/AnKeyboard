@@ -1,16 +1,53 @@
 <resources>
-	<color name="colorPrimary">#6200EE</color>
-	<color name="colorPrimaryDark">#3700B3</color>
-	<color name="colorAccent">#03DAC6</color>
-	<color name="colorControlHighlight">#BB86FC</color>
-	<color name="colorControlNormal">#888888</color>
-	<color name="keyboardBackground">#FAFAFA</color>
+	<!-- Material Design 3 Colors - Light -->
+	<color name="colorPrimary">#6750A4</color>
+	<color name="colorOnPrimary">#FFFFFF</color>
+	<color name="colorPrimaryContainer">#EADDFF</color>
+	<color name="colorOnPrimaryContainer">#21005E</color>
+	<color name="colorSecondary">#625B71</color>
+	<color name="colorOnSecondary">#FFFFFF</color>
+	<color name="colorSecondaryContainer">#E8DEF8</color>
+	<color name="colorOnSecondaryContainer">#1D192B</color>
+	<color name="colorTertiary">#7D5260</color>
+	<color name="colorOnTertiary">#FFFFFF</color>
+	<color name="colorTertiaryContainer">#FFD8E4</color>
+	<color name="colorOnTertiaryContainer">#31111D</color>
+	<color name="colorError">#B3261E</color>
+	<color name="colorErrorContainer">#F9DEDC</color>
+	<color name="colorOnError">#FFFFFF</color>
+	<color name="colorOnErrorContainer">#410E0B</color>
+	<color name="colorBackground">#FFFBFE</color>
+	<color name="colorOnBackground">#1C1B1F</color>
+	<color name="colorSurface">#FFFBFE</color>
+	<color name="colorOnSurface">#1C1B1F</color>
+	<color name="colorSurfaceVariant">#E7E0EC</color>
+	<color name="colorOnSurfaceVariant">#49454E</color>
+	<color name="colorOutline">#79747E</color>
+	<color name="colorOutlineVariant">#CAC7D0</color>
+	<color name="colorScrim">#000000</color>
+	
+	<!-- Light Mode Keyboard -->
+	<color name="keyboardBackground">#F5F5F5</color>
 	<color name="keyTextColor">#1F1F1F</color>
 	<color name="keyBackground">#FFFFFF</color>
-	<color name="keyPressed">#E8F5E8</color>
-	<!-- Dark mode colors -->
-	<color name="keyboardBackgroundDark">#1E1E1E</color>
+	<color name="keyPressed">#E8F5E9</color>
+	<color name="keyBorder">#E0E0E0</color>
+	<color name="candidateBackground">#FAFAFA</color>
+	<color name="candidateHighlight">#E3F2FD</color>
+	
+	<!-- Dark Mode Keyboard -->
+	<color name="keyboardBackgroundDark">#121212</color>
 	<color name="keyTextColorDark">#FFFFFF</color>
-	<color name="keyBackgroundDark">#2D2D2D</color>
-	<color name="keyPressedDark">#333333</color>
+	<color name="keyBackgroundDark">#1F1F1F</color>
+	<color name="keyPressedDark">#2D2D2D</color>
+	<color name="keyBorderDark">#404040</color>
+	<color name="candidateBackgroundDark">#1E1E1E</color>
+	<color name="candidateHighlightDark">#1A237E</color>
+	
+	<!-- UI Colors -->
+	<color name="accentColor">#03DAC6</color>
+	<color name="accentColorLight">#B2EBF2</color>
+	<color name="successColor">#4CAF50</color>
+	<color name="warningColor">#FF9800</color>
+	<color name="errorColor">#F44336</color>
 </resources>

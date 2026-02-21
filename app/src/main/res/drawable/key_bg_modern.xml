@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)">
-    <!-- State: Ditekan -->
+<!-- Modern minimalist key background for light mode -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="@color/keyPressed"/>
-            <corners android:radius="12dp"/>
-            <stroke android:width="1dp" android:color="@color/colorPrimary"/>
+            <solid android:color="@color/colorPrimaryContainer"/>
+            <corners android:radius="8dp"/>
+            <stroke android:width="0dp" android:color="@android:color/transparent"/>
         </shape>
     </item>
     
-    <!-- State: Normal -->
+    <!-- Normal state -->
     <item>
         <shape android:shape="rectangle">
             <solid android:color="@color/keyBackground"/>
-            <corners android:radius="12dp"/>
-            <stroke android:width="1dp" android:color="#E0E0E0"/>
+            <corners android:radius="8dp"/>
+            <stroke android:width="1dp" android:color="@color/keyBorder"/>
         </shape>
     </item>
 </selector>
+

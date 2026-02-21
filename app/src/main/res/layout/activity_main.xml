@@ -1,97 +1,326 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:orientation="vertical"
 	android:background="@color/keyboardBackground">
+
 	<LinearLayout
-		android:id="@+id/linear3"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:padding="24dp"
-		android:background="@color/keyboardBackground"
-		android:gravity="center_horizontal"
-		android:orientation="vertical">
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<!-- Header -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="24dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textSize="32sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorPrimary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_description"
+				android:textSize="14sp"
+				android:textColor="@color/colorOnSurfaceVariant"
+				android:layout_marginTop="8dp"
+				android:lineSpacingExtra="3dp" />
+		</LinearLayout>
+
+		<!-- Setup Card -->
 		<com.google.android.material.card.MaterialCardView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginBottom="24dp"
-			app:cardCornerRadius="16dp"
-			app:cardElevation="4dp">
+			android:layout_marginBottom="16dp"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="2dp"
+			app:strokeColor="@color/colorOutlineVariant"
+			app:strokeWidth="1dp"
+			app:cardBackgroundColor="@color/colorSurface">
+
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:orientation="vertical"
-				android:padding="24dp">
+				android:padding="20dp">
+
 				<TextView
-					android:id="@+id/textview4"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginBottom="8dp"
-					android:text="AnKeyboard Setup"
-					android:textSize="28sp"
+					android:text="@string/setup_title"
+					android:textSize="18sp"
 					android:textStyle="bold"
-					android:textColor="@color/keyTextColor" />
-				<TextView
-					android:id="@+id/textview5"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginBottom="24dp"
-					android:text="@string/app_description"
-					android:textSize="16sp"
-					android:textColor="#666666" />
+					android:textColor="@color/colorOnSurface"
+					android:layout_marginBottom="16dp" />
+
 				<com.google.android.material.button.MaterialButton
 					android:id="@+id/btn_enable"
 					android:layout_width="match_parent"
-					android:layout_height="60dp"
-					android:layout_marginBottom="16dp"
+					android:layout_height="48dp"
+					android:layout_marginBottom="12dp"
 					android:text="@string/enable_keyboard"
-					app:cornerRadius="12dp"
+					android:textAllCaps="false"
+					app:cornerRadius="8dp"
 					app:icon="@drawable/ic_keyboard"
-					app:iconGravity="textStart" />
+					app:iconGravity="textStart"
+					style="@style/Widget.MaterialComponents.Button" />
+
 				<com.google.android.material.button.MaterialButton
 					android:id="@+id/btn_select"
 					android:layout_width="match_parent"
-					android:layout_height="60dp"
-					android:layout_marginBottom="24dp"
+					android:layout_height="48dp"
 					android:text="@string/select_keyboard"
-					app:cornerRadius="12dp"
+					android:textAllCaps="false"
+					app:cornerRadius="8dp"
 					app:icon="@drawable/ic_swap"
 					app:iconGravity="textStart"
 					style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 			</LinearLayout>
 		</com.google.android.material.card.MaterialCardView>
+
+		<!-- Test Input Card -->
 		<com.google.android.material.card.MaterialCardView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			app:cardCornerRadius="16dp"
-			app:cardElevation="4dp">
+			android:layout_marginBottom="16dp"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="2dp"
+			app:strokeColor="@color/colorOutlineVariant"
+			app:strokeWidth="1dp"
+			app:cardBackgroundColor="@color/colorSurface">
+
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:orientation="vertical"
-				android:padding="24dp">
+				android:padding="20dp">
+
 				<TextView
-					android:id="@+id/textview6"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginBottom="8dp"
-					android:text="Coba ketik di sini:"
+					android:text="@string/try_typing"
 					android:textSize="14sp"
 					android:textStyle="bold"
-					android:layout_gravity="start" />
-				<com.google.android.material.textfield.TextInputEditText
-					android:id="@+id/test_field"
+					android:textColor="@color/colorOnSurface"
+					android:layout_marginBottom="12dp" />
+
+				<com.google.android.material.textfield.TextInputLayout
 					android:layout_width="match_parent"
-					android:layout_height="100dp"
-					android:padding="16dp"
-					android:textSize="14sp"
-					android:hint="@string/test_hint"
-					android:gravity="top|start"
-					android:background="@drawable/key_bg_modern" />
+					android:layout_height="wrap_content"
+					app:boxBackgroundColor="@color/colorPrimaryContainer"
+					app:boxCornerRadiusBottomEnd="8dp"
+					app:boxCornerRadiusBottomStart="8dp"
+					app:boxCornerRadiusTopEnd="8dp"
+					app:boxCornerRadiusTopStart="8dp"
+					app:counterEnabled="true"
+					app:counterMaxLength="200">
+
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/test_field"
+						android:layout_width="match_parent"
+						android:layout_height="100dp"
+						android:textSize="14sp"
+						android:hint="@string/test_hint"
+						android:gravity="top|start"
+						android:inputType="textMultiLine"
+						android:textColor="@color/colorOnBackground" />
+				</com.google.android.material.textfield.TextInputLayout>
 			</LinearLayout>
 		</com.google.android.material.card.MaterialCardView>
+
+		<!-- Language & Settings Card -->
+		<com.google.android.material.card.MaterialCardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="2dp"
+			app:strokeColor="@color/colorOutlineVariant"
+			app:strokeWidth="1dp"
+			app:cardBackgroundColor="@color/colorSurface">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/settings_title"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="@color/colorOnSurface"
+					android:layout_marginBottom="16dp" />
+
+				<!-- Language Selector -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_marginBottom="16dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/language_setting"
+						android:textSize="14sp"
+						android:textColor="@color/colorOnSurface"
+						android:textStyle="bold"
+						android:layout_marginBottom="8dp" />
+
+					<com.google.android.material.button.MaterialButtonToggleGroup
+						android:id="@+id/language_toggle_group"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						app:selectionRequired="true"
+						app:singleSelection="true">
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="ID"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="EN"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="ES"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="FR"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+					</com.google.android.material.button.MaterialButtonToggleGroup>
+				</LinearLayout>
+
+				<!-- Theme Selector -->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/theme_setting"
+						android:textSize="14sp"
+						android:textColor="@color/colorOnSurface"
+						android:textStyle="bold"
+						android:layout_marginBottom="8dp" />
+
+					<com.google.android.material.button.MaterialButtonToggleGroup
+						android:id="@+id/theme_toggle_group"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						app:selectionRequired="true"
+						app:singleSelection="true">
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="@string/light_mode"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="@string/dark_mode"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+						<com.google.android.material.button.MaterialButton
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="@string/auto_mode"
+							android:textAllCaps="false"
+							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+					</com.google.android.material.button.MaterialButtonToggleGroup>
+				</LinearLayout>
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+
+		<!-- Translation Settings Card -->
+		<com.google.android.material.card.MaterialCardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="12dp"
+			app:cardElevation="2dp"
+			app:strokeColor="@color/colorOutlineVariant"
+			app:strokeWidth="1dp"
+			app:cardBackgroundColor="@color/colorSurface">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20dp">
+
+				<com.google.android.material.switchmaterial.SwitchMaterial
+					android:id="@+id/translate_switch"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/enable_translate"
+					android:textSize="14sp"
+					android:textColor="@color/colorOnSurface"
+					android:layout_marginBottom="16dp" />
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:id="@+id/translate_language_layout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:hint="@string/translate_language"
+					app:boxBackgroundColor="@color/colorPrimaryContainer"
+					app:boxCornerRadiusBottomEnd="8dp"
+					app:boxCornerRadiusBottomStart="8dp"
+					app:boxCornerRadiusTopEnd="8dp"
+					app:boxCornerRadiusTopStart="8dp">
+
+					<com.google.android.material.textfield.TextInputEditText
+						android:id="@+id/translate_language_input"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:inputType="none"
+						android:textColor="@color/colorOnBackground" />
+				</com.google.android.material.textfield.TextInputLayout>
+			</LinearLayout>
+		</com.google.android.material.card.MaterialCardView>
+
+		<!-- Footer Spacing -->
+		<Space
+			android:layout_width="match_parent"
+			android:layout_height="32dp" />
 	</LinearLayout>
-</LinearLayout>
+</ScrollView>

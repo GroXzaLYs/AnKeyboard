@@ -9,8 +9,12 @@
     android:keyBackground="@drawable/key_bg_modern"
     android:keyTextColor="@color/keyTextColor"
     android:keyTextSize="18sp"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
+    android:labelTextSize="8sp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
     android:keyPreviewLayout="@layout/key_preview" 
-    android:shadowRadius="0.0" 
-/>
+    android:shadowRadius="0.0"
+    android:verticalGap="6dp" />
+

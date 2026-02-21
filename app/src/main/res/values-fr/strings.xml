@@ -1,0 +1,59 @@
+<resources>
+	<string name="app_name" translatable="false">AnKeyboard</string>
+	
+	<!-- Main Setup Screen -->
+	<string name="app_description">Clavier intelligent avec correction automatique, emoji, traduction et support multilingue</string>
+	<string name="setup_title">Configuration d\'AnKeyboard</string>
+	<string name="enable_keyboard">Activer AnKeyboard</string>
+	<string name="select_keyboard">Sélectionner AnKeyboard</string>
+	<string name="enable_desc">Ouvrez les paramètres pour activer le clavier</string>
+	<string name="select_desc">Sélectionnez AnKeyboard comme clavier par défaut</string>
+	<string name="test_hint">Testez les nouvelles fonctionnalités du clavier...</string>
+	<string name="try_typing">Essayez de taper ici:</string>
+	
+	<!-- Settings -->
+	<string name="settings_title">Paramètres</string>
+	<string name="language_setting">Langue</string>
+	<string name="theme_setting">Thème</string>
+	<string name="sound_setting">Son</string>
+	<string name="vibration_setting">Vibration</string>
+	<string name="dark_mode">Mode Sombre</string>
+	<string name="light_mode">Mode Clair</string>
+	<string name="auto_mode">Automatique</string>
+	<string name="enable_translate">Activer la Traduction</string>
+	<string name="translate_language">Langue de Traduction</string>
+	
+	<!-- Translate Feature -->
+	<string name="translate">Traduire</string>
+	<string name="translated_text">Texte Traduit</string>
+	<string name="from_language">Từ Langue</string>
+	<string name="to_language">Vers Langue</string>
+	<string name="translating">Traduction en cours...</string>
+	<string name="translation_error">La traduction a échoué</string>
+	
+	<!-- Keyboard Actions -->
+	<string name="delete">Supprimer</string>
+	<string name="space">Espace</string>
+	<string name="enter">Entrée</string>
+	<string name="shift">Maj</string>
+	<string name="emoji">Emoji</string>
+	<string name="select_all">Sélectionner Tout</string>
+	<string name="copy">Copier</string>
+	<string name="cut">Couper</string>
+	<string name="paste">Coller</string>
+	<string name="undo">Annuler</string>
+	<string name="redo">Rétablir</string>
+	
+	<!-- Suggestions -->
+	<string name="suggestions">Suggestions</string>
+	<string name="no_suggestions">Aucune suggestion</string>
+	
+	<!-- Messages -->
+	<string name="success">Succès</string>
+	<string name="error">Erreur</string>
+	<string name="copy_success">Texte copié</string>
+	<string name="cut_success">Texte coupé</string>
+	<string name="paste_success">Texte collé</string>
+	<string name="keyboard_not_enabled">Le clavier n\'est pas activé</string>
+	<string name="select_keyboard_picker">Sélectionnez un clavier dans la liste</string>
+</resources>

@@ -1,7 +1,59 @@
 <resources>
 	<string name="app_name" translatable="false">AnKeyboard</string>
-	<string name="app_description">Keyboard cerdas dengan autocorrect, emoji, gesture typing, dan dark mode</string>
+	
+	<!-- Main Setup Screen -->
+	<string name="app_description">Keyboard cerdas dengan fitur autocorrect, emoji, translate, dan dukungan multi-bahasa</string>
+	<string name="setup_title">Pengaturan AnKeyboard</string>
 	<string name="enable_keyboard">Aktifkan AnKeyboard</string>
 	<string name="select_keyboard">Pilih AnKeyboard</string>
-	<string name="test_hint">Tes fitur-fitur baru...</string>
+	<string name="enable_desc">Buka pengaturan untuk mengaktifkan keyboard</string>
+	<string name="select_desc">Pilih AnKeyboard sebagai keyboard default</string>
+	<string name="test_hint">Tes fitur-fitur baru keyboard...</string>
+	<string name="try_typing">Coba ketik di sini:</string>
+	
+	<!-- Settings -->
+	<string name="settings_title">Pengaturan</string>
+	<string name="language_setting">Bahasa</string>
+	<string name="theme_setting">Tema</string>
+	<string name="sound_setting">Suara</string>
+	<string name="vibration_setting">Getar</string>
+	<string name="dark_mode">Mode Gelap</string>
+	<string name="light_mode">Mode Terang</string>
+	<string name="auto_mode">Otomatis</string>
+	<string name="enable_translate">Aktifkan Terjemahan</string>
+	<string name="translate_language">Bahasa Terjemahan</string>
+	
+	<!-- Translate Feature -->
+	<string name="translate">Terjemahkan</string>
+	<string name="translated_text">Teks Terjemahan</string>
+	<string name="from_language">Dari Bahasa</string>
+	<string name="to_language">Ke Bahasa</string>
+	<string name="translating">Menerjemahkan...</string>
+	<string name="translation_error">Gagal menerjemahkan</string>
+	
+	<!-- Keyboard Actions -->
+	<string name="delete">Hapus</string>
+	<string name="space">Spasi</string>
+	<string name="enter">Enter</string>
+	<string name="shift">Shift</string>
+	<string name="emoji">Emoji</string>
+	<string name="select_all">Pilih Semua</string>
+	<string name="copy">Salin</string>
+	<string name="cut">Potong</string>
+	<string name="paste">Tempel</string>
+	<string name="undo">Batal</string>
+	<string name="redo">Ulang</string>
+	
+	<!-- Suggestions -->
+	<string name="suggestions">Saran</string>
+	<string name="no_suggestions">Tidak ada saran</string>
+	
+	<!-- Messages -->
+	<string name="success">Berhasil</string>
+	<string name="error">Kesalahan</string>
+	<string name="copy_success">Teks disalin</string>
+	<string name="cut_success">Teks dipotong</string>
+	<string name="paste_success">Teks ditempel</string>
+	<string name="keyboard_not_enabled">Keyboard belum diaktifkan</string>
+	<string name="select_keyboard_picker">Pilih keyboard dari daftar</string>
 </resources>

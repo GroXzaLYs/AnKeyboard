@@ -1,0 +1,59 @@
+<resources>
+	<string name="app_name" translatable="false">AnKeyboard</string>
+	
+	<!-- Main Setup Screen -->
+	<string name="app_description">自動修正、絵文字、翻訳、多言語サポート付きのスマートキーボード</string>
+	<string name="setup_title">AnKeyboard 設定</string>
+	<string name="enable_keyboard">AnKeyboard を有効にする</string>
+	<string name="select_keyboard">AnKeyboard を選択</string>
+	<string name="enable_desc">設定を開いてキーボードを有効にします</string>
+	<string name="select_desc">AnKeyboard をデフォルトキーボードとして選択</string>
+	<string name="test_hint">新しいキーボード機能をテストしてください...</string>
+	<string name="try_typing">ここに入力してみてください：</string>
+	
+	<!-- Settings -->
+	<string name="settings_title">設定</string>
+	<string name="language_setting">言語</string>
+	<string name="theme_setting">テーマ</string>
+	<string name="sound_setting">サウンド</string>
+	<string name="vibration_setting">振動</string>
+	<string name="dark_mode">ダークモード</string>
+	<string name="light_mode">ライトモード</string>
+	<string name="auto_mode">自動</string>
+	<string name="enable_translate">翻訳を有効にする</string>
+	<string name="translate_language">翻訳言語</string>
+	
+	<!-- Translate Feature -->
+	<string name="translate">翻訳</string>
+	<string name="translated_text">翻訳されたテキスト</string>
+	<string name="from_language">ソース言語</string>
+	<string name="to_language">ターゲット言語</string>
+	<string name="translating">翻訳中...</string>
+	<string name="translation_error">翻訳に失敗しました</string>
+	
+	<!-- Keyboard Actions -->
+	<string name="delete">削除</string>
+	<string name="space">スペース</string>
+	<string name="enter">Enter</string>
+	<string name="shift">Shift</string>
+	<string name="emoji">絵文字</string>
+	<string name="select_all">すべて選択</string>
+	<string name="copy">コピー</string>
+	<string name="cut">カット</string>
+	<string name="paste">ペースト</string>
+	<string name="undo">元に戻す</string>
+	<string name="redo">やり直す</string>
+	
+	<!-- Suggestions -->
+	<string name="suggestions">提案</string>
+	<string name="no_suggestions">提案はありません</string>
+	
+	<!-- Messages -->
+	<string name="success">成功</string>
+	<string name="error">エラー</string>
+	<string name="copy_success">テキストがコピーされました</string>
+	<string name="cut_success">テキストがカットされました</string>
+	<string name="paste_success">テキストが貼り付けられました</string>
+	<string name="keyboard_not_enabled">キーボードが有効になっていません</string>
+	<string name="select_keyboard_picker">リストからキーボードを選択</string>
+</resources>

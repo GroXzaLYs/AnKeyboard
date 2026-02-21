@@ -1,0 +1,44 @@
+<resources>
+	<!-- Material Design 3 Colors - Dark -->
+	<color name="colorPrimary">#D0BCFF</color>
+	<color name="colorOnPrimary">#371E55</color>
+	<color name="colorPrimaryContainer">#4F378B</color>
+	<color name="colorOnPrimaryContainer">#EADDFF</color>
+	<color name="colorSecondary">#CCC7F0</color>
+	<color name="colorOnSecondary">#302E47</color>
+	<color name="colorSecondaryContainer">#49454E</color>
+	<color name="colorOnSecondaryContainer">#E8DEF8</color>
+	<color name="colorTertiary">#F4B8E1</color>
+	<color name="colorOnTertiary">#492532</color>
+	<color name="colorTertiaryContainer">#633B48</color>
+	<color name="colorOnTertiaryContainer">#FFD8E4</color>
+	<color name="colorError">#F2B8B5</color>
+	<color name="colorErrorContainer">#8C1D18</color>
+	<color name="colorOnError">#601410</color>
+	<color name="colorOnErrorContainer">#F9DEDC</color>
+	<color name="colorBackground">#1C1B1F</color>
+	<color name="colorOnBackground">#E6E1E5</color>
+	<color name="colorSurface">#1C1B1F</color>
+	<color name="colorOnSurface">#E6E1E5</color>
+	<color name="colorSurfaceVariant">#49454E</color>
+	<color name="colorOnSurfaceVariant">#CAC7D0</color>
+	<color name="colorOutline">#938F99</color>
+	<color name="colorOutlineVariant">#49454E</color>
+	<color name="colorScrim">#000000</color>
+
+	<!-- Dark Mode Keyboard -->
+	<color name="keyboardBackground">@color/keyboardBackgroundDark</color>
+	<color name="keyTextColor">@color/keyTextColorDark</color>
+	<color name="keyBackground">@color/keyBackgroundDark</color>
+	<color name="keyPressed">@color/keyPressedDark</color>
+	<color name="keyBorder">@color/keyBorderDark</color>
+	<color name="candidateBackground">@color/candidateBackgroundDark</color>
+	<color name="candidateHighlight">@color/candidateHighlightDark</color>
+	
+	<!-- UI Colors Dark -->
+	<color name="accentColor">#80DEEA</color>
+	<color name="accentColorLight">#4DD0E1</color>
+	<color name="successColor">#66BB6A</color>
+	<color name="warningColor">#FFA726</color>
+	<color name="errorColor">#EF5350</color>
+</resources>
