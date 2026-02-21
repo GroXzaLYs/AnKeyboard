@@ -26,6 +26,10 @@ import android.content.res.Configuration;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -535,20 +539,16 @@ public class AnKeyboardService extends InputMethodService implements KeyboardVie
      * Paste text from clipboard
      */
     private void pasteText() {
-        try {
-            ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-            if (clipboard != null && clipboard.hasPrimaryClip()) {
-                ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
-                CharSequence text = item.getText();
-                if (text != null) {
-                    InputConnection ic = getCurrentInputConnection();
-                    if (ic != null) {
-                        ic.commitText(text, 1);
-                    }
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        if (clipboard.hasPrimaryClip()) {
+            ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
+            CharSequence text = item.getText();
+            if (text != null) {
+                InputConnection ic = getCurrentInputConnection();
+                if (ic != null) {
+                    ic.commitText(text, 1);
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
