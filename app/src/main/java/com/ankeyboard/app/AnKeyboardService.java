@@ -1,4 +1,4 @@
-/*
+./*
  * AnKeyboard - A smart learning keyboard for Android
  * Copyright (C) 2026 AnerysRynz
  *
